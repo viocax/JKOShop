@@ -18,17 +18,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         // Do any additional setup after loading the view.
-        let relay = PublishRelay<Void>()
-        let driver = Driver.just(())
-        let v = UIImageView()
-        view.addSubview(v)
-        v.translatesAutoresizingMaskIntoConstraints = false
-        v.snp.makeConstraints { make in
-            
-        }
-        v.kf.cancelDownloadTask()
     }
-
-
 }
-
