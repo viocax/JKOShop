@@ -9,7 +9,7 @@ import Foundation
 @testable import JKOShop
 @testable import RxSwift
 
-typealias CoordinatorProcotol = ProductCoordinatorProcotol
+typealias CoordinatorProcotol = ProductCoordinatorProcotol & ProductDetailCoordinatorProtocol
 
 class MockCoordinator: CoordinatorProcotol  {
     
@@ -21,5 +21,14 @@ class MockCoordinator: CoordinatorProcotol  {
     func showHistoryView() -> Observable<Void> {
         return injectShowHistoryView
     }
-    
+
+    var injectShowChartView: Observable<Void> = .empty()
+    func showChartView() -> Observable<Void> {
+        return injectShowChartView
+    }
+
+    var injectOrderCheckingView: (() -> Observable<Void>)!
+    func showOrderCheckingView() -> Observable<Void> {
+        return injectOrderCheckingView()
+    }
 }

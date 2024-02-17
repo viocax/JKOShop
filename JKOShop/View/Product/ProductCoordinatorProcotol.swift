@@ -14,7 +14,21 @@ protocol ProductCoordinatorProcotol {
 
 extension Coordinator: ProductCoordinatorProcotol {
     func showDetailPage(_ model: ShopItemsViewModel) -> Observable<Void> {
-        fatalError()
+        return .create { [weak self] subscriber in
+            guard let viewController = self?.viewController else {
+                subscriber.onCompleted()
+                return Disposables.create()
+            }
+            let useCase = UseCase.ProductDetail(model: model)
+            let coordinator = Coordinator()
+            let viewModel = ProductDetailViewModel(useCase: useCase, coordinator: coordinator)
+            let detailView = ProductDetailViewController(viewModel)
+            coordinator.viewController = detailView
+            viewController.navigationController?.pushViewController(detailView, animated: true)
+            subscriber.onNext(())
+            subscriber.onCompleted()
+            return Disposables.create()
+        }
     }
     func showHistoryView() -> Observable<Void> {
         fatalError()

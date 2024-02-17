@@ -70,6 +70,9 @@
 		64E5AC8B2B8093F80002940C /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC8A2B8093F80002940C /* ProductDetail.swift */; };
 		64E5AC8D2B8094200002940C /* ProductDetailUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC8C2B8094200002940C /* ProductDetailUseCaseTests.swift */; };
 		64E5AC912B80944F0002940C /* MockRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC902B80944F0002940C /* MockRepo.swift */; };
+		64E5AC932B8094B00002940C /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC922B8094B00002940C /* ProductDetailViewModel.swift */; };
+		64E5AC952B8094BB0002940C /* ProductDetailCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC942B8094BB0002940C /* ProductDetailCoordinatorProtocol.swift */; };
+		64E5AC992B8095970002940C /* ProductDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC982B8095970002940C /* ProductDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +147,9 @@
 		64E5AC8A2B8093F80002940C /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		64E5AC8C2B8094200002940C /* ProductDetailUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailUseCaseTests.swift; sourceTree = "<group>"; };
 		64E5AC902B80944F0002940C /* MockRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepo.swift; sourceTree = "<group>"; };
+		64E5AC922B8094B00002940C /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		64E5AC942B8094BB0002940C /* ProductDetailCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		64E5AC982B8095970002940C /* ProductDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				64E5AC272B805F010002940C /* ProductDetailViewController.swift */,
+				64E5AC922B8094B00002940C /* ProductDetailViewModel.swift */,
+				64E5AC942B8094BB0002940C /* ProductDetailCoordinatorProtocol.swift */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -408,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				64E5AC782B8088690002940C /* ProductListViewModelTests.swift */,
+				64E5AC982B8095970002940C /* ProductDetailViewModelTests.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";
@@ -570,6 +579,7 @@
 				64E5AC5A2B807FBC0002940C /* ProductListUseCase.swift in Sources */,
 				64E5AC562B807F5E0002940C /* ProductList.swift in Sources */,
 				64E5AC302B805F670002940C /* EmptyView.swift in Sources */,
+				64E5AC952B8094BB0002940C /* ProductDetailCoordinatorProtocol.swift in Sources */,
 				64E5AC7F2B8088FD0002940C /* Int++String.swift in Sources */,
 				64E5AC722B8087150002940C /* Reactive+UIViewController.swift in Sources */,
 				64E5AC6A2B8086380002940C /* ProductListCell.swift in Sources */,
@@ -600,6 +610,7 @@
 				64E5AC172B805C6E0002940C /* ErrorInfo.swift in Sources */,
 				64E5AC192B805CA70002940C /* HudTracker.swift in Sources */,
 				645939B32B804AFD0068C280 /* SceneDelegate.swift in Sources */,
+				64E5AC932B8094B00002940C /* ProductDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +620,7 @@
 			files = (
 				64E5AC402B80799F0002940C /* OrderTests.swift in Sources */,
 				64E5AC8D2B8094200002940C /* ProductDetailUseCaseTests.swift in Sources */,
+				64E5AC992B8095970002940C /* ProductDetailViewModelTests.swift in Sources */,
 				64E5AC672B80857E0002940C /* ProductListUseCaseTests.swift in Sources */,
 				64E5AC792B8088690002940C /* ProductListViewModelTests.swift in Sources */,
 				64E5AC812B8089450002940C /* MockShopModel.swift in Sources */,
