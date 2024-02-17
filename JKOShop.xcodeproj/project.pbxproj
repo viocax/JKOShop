@@ -14,6 +14,10 @@
 		64523D732B80BA25007F2963 /* HistoryOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D722B80BA25007F2963 /* HistoryOrderUseCase.swift */; };
 		64523D752B80BA39007F2963 /* HistoryOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D742B80BA39007F2963 /* HistoryOrder.swift */; };
 		64523D772B80BA88007F2963 /* HistoryOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D762B80BA88007F2963 /* HistoryOrderTests.swift */; };
+		64523D7B2B80BB2D007F2963 /* HistoryOrderCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D7A2B80BB2D007F2963 /* HistoryOrderCoordinatorProtocol.swift */; };
+		64523D7D2B80BB46007F2963 /* HistoryOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D7C2B80BB46007F2963 /* HistoryOrderViewModel.swift */; };
+		64523D7F2B80BB6D007F2963 /* HistoryOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D7E2B80BB6D007F2963 /* HistoryOrderCell.swift */; };
+		64523D822B80BBA5007F2963 /* HistoryOrderViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D812B80BBA5007F2963 /* HistoryOrderViewModelTests.swift */; };
 		645939B12B804AFD0068C280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939B02B804AFD0068C280 /* AppDelegate.swift */; };
 		645939B32B804AFD0068C280 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939B22B804AFD0068C280 /* SceneDelegate.swift */; };
 		645939B52B804AFD0068C280 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939B42B804AFD0068C280 /* ViewController.swift */; };
@@ -118,6 +122,10 @@
 		64523D722B80BA25007F2963 /* HistoryOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderUseCase.swift; sourceTree = "<group>"; };
 		64523D742B80BA39007F2963 /* HistoryOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrder.swift; sourceTree = "<group>"; };
 		64523D762B80BA88007F2963 /* HistoryOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderTests.swift; sourceTree = "<group>"; };
+		64523D7A2B80BB2D007F2963 /* HistoryOrderCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		64523D7C2B80BB46007F2963 /* HistoryOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderViewModel.swift; sourceTree = "<group>"; };
+		64523D7E2B80BB6D007F2963 /* HistoryOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderCell.swift; sourceTree = "<group>"; };
+		64523D812B80BBA5007F2963 /* HistoryOrderViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderViewModelTests.swift; sourceTree = "<group>"; };
 		645939AD2B804AFD0068C280 /* JKOShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645939B02B804AFD0068C280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645939B22B804AFD0068C280 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +246,14 @@
 			isa = PBXGroup;
 			children = (
 				64523D692B80B5EE007F2963 /* OrderCheckingCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		64523D802B80BB85007F2963 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				64523D7E2B80BB6D007F2963 /* HistoryOrderCell.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -373,7 +389,10 @@
 		64E5AC252B805EC60002940C /* HistoryOrder */ = {
 			isa = PBXGroup;
 			children = (
+				64523D802B80BB85007F2963 /* Component */,
 				64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */,
+				64523D7A2B80BB2D007F2963 /* HistoryOrderCoordinatorProtocol.swift */,
+				64523D7C2B80BB46007F2963 /* HistoryOrderViewModel.swift */,
 			);
 			path = HistoryOrder;
 			sourceTree = "<group>";
@@ -486,6 +505,7 @@
 				64E5AC782B8088690002940C /* ProductListViewModelTests.swift */,
 				64E5ACA42B80B01D0002940C /* CartViewModelTests.swift */,
 				64523D702B80B6B0007F2963 /* OrderCheckingViewModelTests.swift */,
+				64523D812B80BBA5007F2963 /* HistoryOrderViewModelTests.swift */,
 				64E5AC982B8095970002940C /* ProductDetailViewModelTests.swift */,
 			);
 			path = ViewModelTests;
@@ -656,6 +676,7 @@
 				64E5AC9F2B80AF2E0002940C /* Cart.swift in Sources */,
 				64E5AC7F2B8088FD0002940C /* Int++String.swift in Sources */,
 				64E5AC722B8087150002940C /* Reactive+UIViewController.swift in Sources */,
+				64523D7B2B80BB2D007F2963 /* HistoryOrderCoordinatorProtocol.swift in Sources */,
 				64523D6D2B80B628007F2963 /* OrderChekingCoordinatorProtocol.swift in Sources */,
 				64E5AC6A2B8086380002940C /* ProductListCell.swift in Sources */,
 				64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */,
@@ -666,6 +687,7 @@
 				64E5AC152B805C570002940C /* Order.swift in Sources */,
 				64E5AC702B8086DA0002940C /* ProductCoordinatorProcotol.swift in Sources */,
 				64E5AC322B805F870002940C /* IndicatorView.swift in Sources */,
+				64523D7F2B80BB6D007F2963 /* HistoryOrderCell.swift in Sources */,
 				64E5AC6C2B8086750002940C /* UITableView++.swift in Sources */,
 				64E5AC2C2B805F2F0002940C /* OrderCheckingViewController.swift in Sources */,
 				64E5AC7D2B8088EB0002940C /* Date++String.swift in Sources */,
@@ -691,6 +713,7 @@
 				64E5AC8B2B8093F80002940C /* ProductDetail.swift in Sources */,
 				64E5AC172B805C6E0002940C /* ErrorInfo.swift in Sources */,
 				64E5AC192B805CA70002940C /* HudTracker.swift in Sources */,
+				64523D7D2B80BB46007F2963 /* HistoryOrderViewModel.swift in Sources */,
 				64E5ACA12B80AF940002940C /* CartViewCoordinatorProtocol.swift in Sources */,
 				64E5ACAB2B80B3A60002940C /* OrderCheckingUseCase.swift in Sources */,
 				645939B32B804AFD0068C280 /* SceneDelegate.swift in Sources */,
@@ -702,6 +725,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64523D822B80BBA5007F2963 /* HistoryOrderViewModelTests.swift in Sources */,
 				64E5AC402B80799F0002940C /* OrderTests.swift in Sources */,
 				64E5AC8D2B8094200002940C /* ProductDetailUseCaseTests.swift in Sources */,
 				64E5AC992B8095970002940C /* ProductDetailViewModelTests.swift in Sources */,

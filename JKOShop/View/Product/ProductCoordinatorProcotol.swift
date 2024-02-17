@@ -31,6 +31,22 @@ extension Coordinator: ProductCoordinatorProcotol {
         }
     }
     func showHistoryView() -> Observable<Void> {
-        fatalError()
+        return .create { [weak self] subscriber in
+            guard let viewController = self?.viewController else {
+                subscriber.onCompleted()
+                return Disposables.create()
+            }
+            let useCase = UseCase.HistoryOrder()
+            let coordinator = Coordinator()
+            let viewModel = HistoryOrderViewModel(useCase: useCase, coordinator: coordinator)
+            let history = HistoryOrderViewController(viewModel: viewModel)
+            history.modalPresentationStyle = .fullScreen
+            coordinator.viewController = history
+            viewController.present(history, animated: true, completion: {
+                subscriber.onNext(())
+                subscriber.onCompleted()
+            })
+            return Disposables.create()
+        }
     }
 }
