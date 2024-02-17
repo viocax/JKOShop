@@ -35,6 +35,13 @@
 		64E5AC192B805CA70002940C /* HudTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC182B805CA70002940C /* HudTracker.swift */; };
 		64E5AC1B2B805CC10002940C /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC1A2B805CC10002940C /* ErrorTracker.swift */; };
 		64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC1C2B805D090002940C /* Endpoint.swift */; };
+		64E5AC222B805E8F0002940C /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC212B805E8F0002940C /* ProductListViewController.swift */; };
+		64E5AC282B805F010002940C /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC272B805F010002940C /* ProductDetailViewController.swift */; };
+		64E5AC2A2B805F120002940C /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC292B805F120002940C /* ChartViewController.swift */; };
+		64E5AC2C2B805F2F0002940C /* OrderCheckingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2B2B805F2F0002940C /* OrderCheckingViewController.swift */; };
+		64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */; };
+		64E5AC302B805F670002940C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2F2B805F670002940C /* EmptyView.swift */; };
+		64E5AC322B805F870002940C /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC312B805F870002940C /* IndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +81,13 @@
 		64E5AC182B805CA70002940C /* HudTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudTracker.swift; sourceTree = "<group>"; };
 		64E5AC1A2B805CC10002940C /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		64E5AC1C2B805D090002940C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		64E5AC212B805E8F0002940C /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		64E5AC272B805F010002940C /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		64E5AC292B805F120002940C /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		64E5AC2B2B805F2F0002940C /* OrderCheckingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCheckingViewController.swift; sourceTree = "<group>"; };
+		64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderViewController.swift; sourceTree = "<group>"; };
+		64E5AC2F2B805F670002940C /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		64E5AC312B805F870002940C /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +154,10 @@
 				645939B02B804AFD0068C280 /* AppDelegate.swift */,
 				645939B22B804AFD0068C280 /* SceneDelegate.swift */,
 				645939B42B804AFD0068C280 /* ViewController.swift */,
+				64E5AC1E2B805E340002940C /* View */,
 				64E5AC112B805C1A0002940C /* Model */,
 				645939BE2B804AFF0068C280 /* Info.plist */,
+				64E5AC332B8060720002940C /* Extension */,
 				64E5AC0E2B805A560002940C /* Resource */,
 			);
 			path = JKOShop;
@@ -185,6 +201,67 @@
 				64E5AC1C2B805D090002940C /* Endpoint.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		64E5AC1E2B805E340002940C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC2F2B805F670002940C /* EmptyView.swift */,
+				64E5AC312B805F870002940C /* IndicatorView.swift */,
+				64E5AC262B805ED60002940C /* OrderChecking */,
+				64E5AC252B805EC60002940C /* HistoryOrder */,
+				64E5AC242B805EBD0002940C /* Chart */,
+				64E5AC232B805EAC0002940C /* ProductDetail */,
+				64E5AC202B805E6A0002940C /* Product */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64E5AC202B805E6A0002940C /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC212B805E8F0002940C /* ProductListViewController.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		64E5AC232B805EAC0002940C /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC272B805F010002940C /* ProductDetailViewController.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		64E5AC242B805EBD0002940C /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC292B805F120002940C /* ChartViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		64E5AC252B805EC60002940C /* HistoryOrder */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */,
+			);
+			path = HistoryOrder;
+			sourceTree = "<group>";
+		};
+		64E5AC262B805ED60002940C /* OrderChecking */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC2B2B805F2F0002940C /* OrderCheckingViewController.swift */,
+			);
+			path = OrderChecking;
+			sourceTree = "<group>";
+		};
+		64E5AC332B8060720002940C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,11 +418,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				645939B52B804AFD0068C280 /* ViewController.swift in Sources */,
+				64E5AC302B805F670002940C /* EmptyView.swift in Sources */,
 				64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */,
+				64E5AC222B805E8F0002940C /* ProductListViewController.swift in Sources */,
 				645939B12B804AFD0068C280 /* AppDelegate.swift in Sources */,
 				64E5AC152B805C570002940C /* Order.swift in Sources */,
+				64E5AC322B805F870002940C /* IndicatorView.swift in Sources */,
+				64E5AC2C2B805F2F0002940C /* OrderCheckingViewController.swift in Sources */,
+				64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */,
+				64E5AC2A2B805F120002940C /* ChartViewController.swift in Sources */,
 				64E5AC1B2B805CC10002940C /* ErrorTracker.swift in Sources */,
 				64E5AC132B805C280002940C /* ShopItem.swift in Sources */,
+				64E5AC282B805F010002940C /* ProductDetailViewController.swift in Sources */,
 				64E5AC172B805C6E0002940C /* ErrorInfo.swift in Sources */,
 				64E5AC192B805CA70002940C /* HudTracker.swift in Sources */,
 				645939B32B804AFD0068C280 /* SceneDelegate.swift in Sources */,
