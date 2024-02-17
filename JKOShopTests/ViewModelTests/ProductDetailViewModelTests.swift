@@ -72,7 +72,7 @@ class ProductDetailViewModelTests: XCTestCase {
         let expectChart: [Recorded<Event<Void>>] = [
             .next(300, ())
         ]
-        mockCoordinator.injectShowChartView = .just(())
+        mockCoordinator.injectShowCartView = .just(())
 
         let observerResult = testScheduler.createObserver(Void.self)
         output.configuration

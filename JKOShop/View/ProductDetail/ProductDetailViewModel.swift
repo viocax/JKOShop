@@ -39,7 +39,7 @@ extension ProductDetailViewModel: ViewModelType {
             .withLatestFrom(displayModel)
             .map(useCase.addToChart(_:))
             .flatMap {
-                return self.coordinator.showChartView()
+                return self.coordinator.showCartView()
                     .asDriverOnErrorJustComplete()
             }
 

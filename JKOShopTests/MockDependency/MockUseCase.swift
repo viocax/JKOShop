@@ -10,7 +10,7 @@ import XCTest
 @testable import JKOShop
 @testable import RxSwift
 
-typealias UseCaseProtocol = ProductListUseCase & ProductDetailUseCase
+typealias UseCaseProtocol = ProductListUseCase & ProductDetailUseCase & CartUseCase
 
 class MockUseCase: UseCaseProtocol {
     var injectRestePageCount: Observable<Void> = .empty()
@@ -36,5 +36,17 @@ class MockUseCase: UseCaseProtocol {
     var injectShopItems: ShopItemsViewModel!
     func getCurrentShopItem() -> ShopItemsViewModel {
         return injectShopItems
+    }
+    var injectToggleEvent: ((CartViewCellViewModel) -> Void)?
+    func toggleItems(_ cell: CartViewCellViewModel) {
+        injectToggleEvent?(cell)
+    }
+    var injectCurrnetChartItems: [CartViewCellViewModel] = []
+    func getCurrentChartItems() -> [CartViewCellViewModel] {
+        return injectCurrnetChartItems
+    }
+    var injectCanCheckOut: (() -> Bool)?
+    func canCheckOut() -> Bool {
+        return injectCanCheckOut?() ?? false
     }
 }
