@@ -42,6 +42,9 @@
 		64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */; };
 		64E5AC302B805F670002940C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2F2B805F670002940C /* EmptyView.swift */; };
 		64E5AC322B805F870002940C /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC312B805F870002940C /* IndicatorView.swift */; };
+		64E5AC3A2B8078BC0002940C /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC392B8078BC0002940C /* ViewModelType.swift */; };
+		64E5AC3C2B8078DB0002940C /* ShopItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC3B2B8078DB0002940C /* ShopItemsViewModel.swift */; };
+		64E5AC3E2B8079170002940C /* NetwrokService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC3D2B8079170002940C /* NetwrokService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderViewController.swift; sourceTree = "<group>"; };
 		64E5AC2F2B805F670002940C /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		64E5AC312B805F870002940C /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		64E5AC392B8078BC0002940C /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		64E5AC3B2B8078DB0002940C /* ShopItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsViewModel.swift; sourceTree = "<group>"; };
+		64E5AC3D2B8079170002940C /* NetwrokService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +161,7 @@
 				645939B22B804AFD0068C280 /* SceneDelegate.swift */,
 				645939B42B804AFD0068C280 /* ViewController.swift */,
 				64E5AC1E2B805E340002940C /* View */,
-				64E5AC112B805C1A0002940C /* Model */,
+				64E5AC382B8078AD0002940C /* Entity */,
 				645939BE2B804AFF0068C280 /* Info.plist */,
 				64E5AC332B8060720002940C /* Extension */,
 				64E5AC0E2B805A560002940C /* Resource */,
@@ -262,6 +268,17 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		64E5AC382B8078AD0002940C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC112B805C1A0002940C /* Model */,
+				64E5AC392B8078BC0002940C /* ViewModelType.swift */,
+				64E5AC3B2B8078DB0002940C /* ShopItemsViewModel.swift */,
+				64E5AC3D2B8079170002940C /* NetwrokService.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,11 +439,14 @@
 				64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */,
 				64E5AC222B805E8F0002940C /* ProductListViewController.swift in Sources */,
 				645939B12B804AFD0068C280 /* AppDelegate.swift in Sources */,
+				64E5AC3E2B8079170002940C /* NetwrokService.swift in Sources */,
 				64E5AC152B805C570002940C /* Order.swift in Sources */,
 				64E5AC322B805F870002940C /* IndicatorView.swift in Sources */,
 				64E5AC2C2B805F2F0002940C /* OrderCheckingViewController.swift in Sources */,
 				64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */,
 				64E5AC2A2B805F120002940C /* ChartViewController.swift in Sources */,
+				64E5AC3A2B8078BC0002940C /* ViewModelType.swift in Sources */,
+				64E5AC3C2B8078DB0002940C /* ShopItemsViewModel.swift in Sources */,
 				64E5AC1B2B805CC10002940C /* ErrorTracker.swift in Sources */,
 				64E5AC132B805C280002940C /* ShopItem.swift in Sources */,
 				64E5AC282B805F010002940C /* ProductDetailViewController.swift in Sources */,
