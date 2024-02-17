@@ -8,20 +8,22 @@
 import Foundation
 import RxSwift
 
-class ProductList {
-    private var pageCount: Int = 1
-    // MARK: from server will better
-    private let maxPage: Int
-    private let service: NetworkService
-    private var tempList: [ShopItemsViewModel] = []
-    
-    init(service: NetworkService = APIService(), maxCount: Int = 5) {
-        self.service = service
-        self.maxPage = maxCount
+extension UseCase {
+    class ProductList {
+        private var pageCount: Int = 1
+        // MARK: from server will better
+        private let maxPage: Int
+        private let service: NetworkService
+        private var tempList: [ShopItemsViewModel] = []
+        
+        init(service: NetworkService = APIService(), maxCount: Int = 5) {
+            self.service = service
+            self.maxPage = maxCount
+        }
     }
 }
 
-extension ProductList: ProductListUseCase {
+extension UseCase.ProductList: ProductListUseCase {
     func resetPageCount() -> Observable<Void> {
         tempList = []
         return .just(pageCount = 1)

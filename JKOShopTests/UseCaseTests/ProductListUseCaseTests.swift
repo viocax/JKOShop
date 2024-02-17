@@ -14,7 +14,7 @@ final class ProductListUseCaseTests: XCTestCase {
 
     func test_ProductListUseCase() {
         let mockSerivce = MockService()
-        let useCase = ProductList(service: mockSerivce, maxCount: 3)
+        let useCase = UseCase.ProductList(service: mockSerivce, maxCount: 3)
         XCTAssertEqual(useCase.getCurrentCount(), 1)
         let mockModel = ShopItem(name: "Test", description: "Tew1", price: 999, create_Time: 0, picture: "")
         mockSerivce.injectRequest = .just([mockModel])

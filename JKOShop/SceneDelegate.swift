@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             fatalError("Check app init")
         }
         window = .init(windowScene: scene)
-        let useCase = ProductList()
+        let useCase = UseCase.ProductList()
         let coordinator = Coordinator()
         let viewModel = ProductListViewModel(useCase: useCase, coordiantor: coordinator)
         let viewController = ProductListViewController(viewModel: viewModel)
