@@ -25,7 +25,9 @@ extension ShopItem: Codable {
         self.description = (try? container.decode(String.self, forKey: .description)) ?? ""
         self.price = (try? container.decode(Int.self, forKey: .price)) ?? 0
         self.create_Time = (try? container.decode(TimeInterval.self, forKey: .create_Time)) ?? 0
-        let picture = (try? container.decode(String.self, forKey: .picture)) ?? ""
+        self.picture = (try? container.decode(String.self, forKey: .picture)) ?? ""
+    }
+    mutating func randomImageURL() {
         let random = (1...9).map { "\($0 * 100)" }
         self.picture = picture + "/\(random.randomElement()!)/\(random.randomElement()!)"
     }

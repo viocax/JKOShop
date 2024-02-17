@@ -52,6 +52,18 @@
 		64E5AC632B8082D90002940C /* ProductListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC622B8082D90002940C /* ProductListEndpoint.swift */; };
 		64E5AC652B8083A00002940C /* RandomImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC642B8083A00002940C /* RandomImageInfo.swift */; };
 		64E5AC672B80857E0002940C /* ProductListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC662B80857E0002940C /* ProductListUseCaseTests.swift */; };
+		64E5AC6A2B8086380002940C /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC692B8086380002940C /* ProductListCell.swift */; };
+		64E5AC6C2B8086750002940C /* UITableView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC6B2B8086750002940C /* UITableView++.swift */; };
+		64E5AC6E2B8086BE0002940C /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC6D2B8086BE0002940C /* ProductListViewModel.swift */; };
+		64E5AC702B8086DA0002940C /* ProductCoordinatorProcotol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC6F2B8086DA0002940C /* ProductCoordinatorProcotol.swift */; };
+		64E5AC722B8087150002940C /* Reactive+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC712B8087150002940C /* Reactive+UIViewController.swift */; };
+		64E5AC742B8087650002940C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC732B8087650002940C /* Coordinator.swift */; };
+		64E5AC762B8087E60002940C /* MockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC752B8087E60002940C /* MockCoordinator.swift */; };
+		64E5AC792B8088690002940C /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC782B8088690002940C /* ProductListViewModelTests.swift */; };
+		64E5AC7B2B80888E0002940C /* MockUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC7A2B80888E0002940C /* MockUseCase.swift */; };
+		64E5AC7D2B8088EB0002940C /* Date++String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC7C2B8088EB0002940C /* Date++String.swift */; };
+		64E5AC7F2B8088FD0002940C /* Int++String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC7E2B8088FD0002940C /* Int++String.swift */; };
+		64E5AC812B8089450002940C /* MockShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC802B8089450002940C /* MockShopModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +120,18 @@
 		64E5AC622B8082D90002940C /* ProductListEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListEndpoint.swift; sourceTree = "<group>"; };
 		64E5AC642B8083A00002940C /* RandomImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageInfo.swift; sourceTree = "<group>"; };
 		64E5AC662B80857E0002940C /* ProductListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListUseCaseTests.swift; sourceTree = "<group>"; };
+		64E5AC692B8086380002940C /* ProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
+		64E5AC6B2B8086750002940C /* UITableView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView++.swift"; sourceTree = "<group>"; };
+		64E5AC6D2B8086BE0002940C /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		64E5AC6F2B8086DA0002940C /* ProductCoordinatorProcotol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCoordinatorProcotol.swift; sourceTree = "<group>"; };
+		64E5AC712B8087150002940C /* Reactive+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+UIViewController.swift"; sourceTree = "<group>"; };
+		64E5AC732B8087650002940C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		64E5AC752B8087E60002940C /* MockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinator.swift; sourceTree = "<group>"; };
+		64E5AC782B8088690002940C /* ProductListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTests.swift; sourceTree = "<group>"; };
+		64E5AC7A2B80888E0002940C /* MockUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUseCase.swift; sourceTree = "<group>"; };
+		64E5AC7C2B8088EB0002940C /* Date++String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date++String.swift"; sourceTree = "<group>"; };
+		64E5AC7E2B8088FD0002940C /* Int++String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int++String.swift"; sourceTree = "<group>"; };
+		64E5AC802B8089450002940C /* MockShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShopModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +211,7 @@
 		645939C62B804AFF0068C280 /* JKOShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				64E5AC772B80885C0002940C /* ViewModelTests */,
 				64E5AC5F2B80800A0002940C /* UseCaseTests */,
 				64E5AC5B2B807FD20002940C /* MockDependency */,
 				64E5AC432B8079F30002940C /* ModelTests */,
@@ -233,6 +258,7 @@
 			children = (
 				64E5AC2F2B805F670002940C /* EmptyView.swift */,
 				64E5AC312B805F870002940C /* IndicatorView.swift */,
+				64E5AC732B8087650002940C /* Coordinator.swift */,
 				64E5AC262B805ED60002940C /* OrderChecking */,
 				64E5AC252B805EC60002940C /* HistoryOrder */,
 				64E5AC242B805EBD0002940C /* Chart */,
@@ -245,7 +271,10 @@
 		64E5AC202B805E6A0002940C /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				64E5AC682B8086200002940C /* Component */,
 				64E5AC212B805E8F0002940C /* ProductListViewController.swift */,
+				64E5AC6F2B8086DA0002940C /* ProductCoordinatorProcotol.swift */,
+				64E5AC6D2B8086BE0002940C /* ProductListViewModel.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -285,6 +314,10 @@
 		64E5AC332B8060720002940C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				64E5AC6B2B8086750002940C /* UITableView++.swift */,
+				64E5AC712B8087150002940C /* Reactive+UIViewController.swift */,
+				64E5AC7C2B8088EB0002940C /* Date++String.swift */,
+				64E5AC7E2B8088FD0002940C /* Int++String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -322,6 +355,9 @@
 			isa = PBXGroup;
 			children = (
 				64E5AC5C2B807FEB0002940C /* MockService.swift */,
+				64E5AC7A2B80888E0002940C /* MockUseCase.swift */,
+				64E5AC752B8087E60002940C /* MockCoordinator.swift */,
+				64E5AC802B8089450002940C /* MockShopModel.swift */,
 			);
 			path = MockDependency;
 			sourceTree = "<group>";
@@ -340,6 +376,22 @@
 				64E5AC662B80857E0002940C /* ProductListUseCaseTests.swift */,
 			);
 			path = UseCaseTests;
+			sourceTree = "<group>";
+		};
+		64E5AC682B8086200002940C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC692B8086380002940C /* ProductListCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		64E5AC772B80885C0002940C /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC782B8088690002940C /* ProductListViewModelTests.swift */,
+			);
+			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,19 +552,27 @@
 				64E5AC5A2B807FBC0002940C /* ProductListUseCase.swift in Sources */,
 				64E5AC562B807F5E0002940C /* ProductList.swift in Sources */,
 				64E5AC302B805F670002940C /* EmptyView.swift in Sources */,
+				64E5AC7F2B8088FD0002940C /* Int++String.swift in Sources */,
+				64E5AC722B8087150002940C /* Reactive+UIViewController.swift in Sources */,
+				64E5AC6A2B8086380002940C /* ProductListCell.swift in Sources */,
 				64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */,
 				64E5AC222B805E8F0002940C /* ProductListViewController.swift in Sources */,
 				645939B12B804AFD0068C280 /* AppDelegate.swift in Sources */,
 				64E5AC3E2B8079170002940C /* NetwrokService.swift in Sources */,
 				64E5AC152B805C570002940C /* Order.swift in Sources */,
+				64E5AC702B8086DA0002940C /* ProductCoordinatorProcotol.swift in Sources */,
 				64E5AC322B805F870002940C /* IndicatorView.swift in Sources */,
+				64E5AC6C2B8086750002940C /* UITableView++.swift in Sources */,
 				64E5AC2C2B805F2F0002940C /* OrderCheckingViewController.swift in Sources */,
+				64E5AC7D2B8088EB0002940C /* Date++String.swift in Sources */,
 				64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */,
 				64E5AC2A2B805F120002940C /* ChartViewController.swift in Sources */,
+				64E5AC742B8087650002940C /* Coordinator.swift in Sources */,
 				64E5AC3A2B8078BC0002940C /* ViewModelType.swift in Sources */,
 				64E5AC3C2B8078DB0002940C /* ShopItemsViewModel.swift in Sources */,
 				64E5AC1B2B805CC10002940C /* ErrorTracker.swift in Sources */,
 				64E5AC132B805C280002940C /* ShopItem.swift in Sources */,
+				64E5AC6E2B8086BE0002940C /* ProductListViewModel.swift in Sources */,
 				64E5AC282B805F010002940C /* ProductDetailViewController.swift in Sources */,
 				64E5AC652B8083A00002940C /* RandomImageInfo.swift in Sources */,
 				64E5AC172B805C6E0002940C /* ErrorInfo.swift in Sources */,
@@ -527,7 +587,11 @@
 			files = (
 				64E5AC402B80799F0002940C /* OrderTests.swift in Sources */,
 				64E5AC672B80857E0002940C /* ProductListUseCaseTests.swift in Sources */,
+				64E5AC792B8088690002940C /* ProductListViewModelTests.swift in Sources */,
+				64E5AC812B8089450002940C /* MockShopModel.swift in Sources */,
 				64E5AC422B8079D20002940C /* ShopItemTests.swift in Sources */,
+				64E5AC762B8087E60002940C /* MockCoordinator.swift in Sources */,
+				64E5AC7B2B80888E0002940C /* MockUseCase.swift in Sources */,
 				64E5AC5D2B807FEB0002940C /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

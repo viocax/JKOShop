@@ -42,6 +42,7 @@ extension ProductList: ProductListUseCase {
                 let tempNames = ["Dan", "Ben", "Ken", "Jane", "Kylle"]
                 let result = new.map { showItem  -> ShopItemsViewModel  in
                     var copy = showItem
+                    copy.randomImageURL()
                     copy.identifier = UUID().uuidString + copy.identifier
                     copy.name = "Page: \(currentCount), Name: \(tempNames.randomElement() ?? "")"
                     copy.description = "interger \(currentCount)" + copy.description
