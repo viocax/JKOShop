@@ -45,6 +45,8 @@
 		64E5AC3A2B8078BC0002940C /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC392B8078BC0002940C /* ViewModelType.swift */; };
 		64E5AC3C2B8078DB0002940C /* ShopItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC3B2B8078DB0002940C /* ShopItemsViewModel.swift */; };
 		64E5AC3E2B8079170002940C /* NetwrokService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC3D2B8079170002940C /* NetwrokService.swift */; };
+		64E5AC402B80799F0002940C /* OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC3F2B80799F0002940C /* OrderTests.swift */; };
+		64E5AC422B8079D20002940C /* ShopItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC412B8079D20002940C /* ShopItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		64E5AC392B8078BC0002940C /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		64E5AC3B2B8078DB0002940C /* ShopItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsViewModel.swift; sourceTree = "<group>"; };
 		64E5AC3D2B8079170002940C /* NetwrokService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokService.swift; sourceTree = "<group>"; };
+		64E5AC3F2B80799F0002940C /* OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTests.swift; sourceTree = "<group>"; };
+		64E5AC412B8079D20002940C /* ShopItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				645939C72B804AFF0068C280 /* JKOShopTests.swift */,
+				64E5AC432B8079F30002940C /* ModelTests */,
 			);
 			path = JKOShopTests;
 			sourceTree = "<group>";
@@ -279,6 +284,15 @@
 				64E5AC3D2B8079170002940C /* NetwrokService.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		64E5AC432B8079F30002940C /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				64E5AC3F2B80799F0002940C /* OrderTests.swift */,
+				64E5AC412B8079D20002940C /* ShopItemTests.swift */,
+			);
+			path = ModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +474,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E5AC402B80799F0002940C /* OrderTests.swift in Sources */,
+				64E5AC422B8079D20002940C /* ShopItemTests.swift in Sources */,
 				645939C82B804AFF0068C280 /* JKOShopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
