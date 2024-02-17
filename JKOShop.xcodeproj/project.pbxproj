@@ -80,6 +80,10 @@
 		64E5ACA32B80AFF20002940C /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5ACA22B80AFF20002940C /* CartViewModel.swift */; };
 		64E5ACA52B80B01D0002940C /* CartViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5ACA42B80B01D0002940C /* CartViewModelTests.swift */; };
 		64E5ACA72B80B2230002940C /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5ACA62B80B2230002940C /* CartTableViewCell.swift */; };
+		64E5ACA92B80B3900002940C /* OrderFooterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5ACA82B80B3900002940C /* OrderFooterViewModel.swift */; };
+		64E5ACAB2B80B3A60002940C /* OrderCheckingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5ACAA2B80B3A60002940C /* OrderCheckingUseCase.swift */; };
+		64E5ACAD2B80B3B80002940C /* OrderChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5ACAC2B80B3B80002940C /* OrderChecking.swift */; };
+		64E5ACAF2B80B40B0002940C /* OrderCheckingUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5ACAE2B80B40B0002940C /* OrderCheckingUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +168,10 @@
 		64E5ACA22B80AFF20002940C /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		64E5ACA42B80B01D0002940C /* CartViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModelTests.swift; sourceTree = "<group>"; };
 		64E5ACA62B80B2230002940C /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		64E5ACA82B80B3900002940C /* OrderFooterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFooterViewModel.swift; sourceTree = "<group>"; };
+		64E5ACAA2B80B3A60002940C /* OrderCheckingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCheckingUseCase.swift; sourceTree = "<group>"; };
+		64E5ACAC2B80B3B80002940C /* OrderChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderChecking.swift; sourceTree = "<group>"; };
+		64E5ACAE2B80B40B0002940C /* OrderCheckingUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCheckingUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +373,7 @@
 				64E5AC112B805C1A0002940C /* Model */,
 				64E5AC392B8078BC0002940C /* ViewModelType.swift */,
 				64E5AC9C2B80AEFC0002940C /* CartViewCellViewModel.swift */,
+				64E5ACA82B80B3900002940C /* OrderFooterViewModel.swift */,
 				64E5AC3B2B8078DB0002940C /* ShopItemsViewModel.swift */,
 				64E5AC3D2B8079170002940C /* NetwrokService.swift */,
 				64E5AC882B8093E00002940C /* Repository.swift */,
@@ -387,6 +396,7 @@
 				64E5AC862B8092DA0002940C /* UseCase.swift */,
 				64E5AC592B807FBC0002940C /* ProductListUseCase.swift */,
 				64E5AC842B8092AB0002940C /* ProductDetailUseCase.swift */,
+				64E5ACAA2B80B3A60002940C /* OrderCheckingUseCase.swift */,
 				64E5AC9A2B80AEDF0002940C /* CartUseCase.swift */,
 				64E5AC5E2B807FFC0002940C /* Imp */,
 			);
@@ -409,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				64E5AC552B807F5E0002940C /* ProductList.swift */,
+				64E5ACAC2B80B3B80002940C /* OrderChecking.swift */,
 				64E5AC9E2B80AF2E0002940C /* Cart.swift */,
 				64E5AC8A2B8093F80002940C /* ProductDetail.swift */,
 			);
@@ -419,6 +430,7 @@
 			isa = PBXGroup;
 			children = (
 				64E5AC662B80857E0002940C /* ProductListUseCaseTests.swift */,
+				64E5ACAE2B80B40B0002940C /* OrderCheckingUseCaseTests.swift */,
 				64E5AC8C2B8094200002940C /* ProductDetailUseCaseTests.swift */,
 			);
 			path = UseCaseTests;
@@ -609,6 +621,7 @@
 				64E5AC6A2B8086380002940C /* ProductListCell.swift in Sources */,
 				64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */,
 				64E5AC222B805E8F0002940C /* ProductListViewController.swift in Sources */,
+				64E5ACAD2B80B3B80002940C /* OrderChecking.swift in Sources */,
 				645939B12B804AFD0068C280 /* AppDelegate.swift in Sources */,
 				64E5AC3E2B8079170002940C /* NetwrokService.swift in Sources */,
 				64E5AC152B805C570002940C /* Order.swift in Sources */,
@@ -623,6 +636,7 @@
 				64E5AC742B8087650002940C /* Coordinator.swift in Sources */,
 				64E5AC3A2B8078BC0002940C /* ViewModelType.swift in Sources */,
 				64E5AC3C2B8078DB0002940C /* ShopItemsViewModel.swift in Sources */,
+				64E5ACA92B80B3900002940C /* OrderFooterViewModel.swift in Sources */,
 				64E5AC1B2B805CC10002940C /* ErrorTracker.swift in Sources */,
 				64E5AC132B805C280002940C /* ShopItem.swift in Sources */,
 				64E5AC6E2B8086BE0002940C /* ProductListViewModel.swift in Sources */,
@@ -636,6 +650,7 @@
 				64E5AC172B805C6E0002940C /* ErrorInfo.swift in Sources */,
 				64E5AC192B805CA70002940C /* HudTracker.swift in Sources */,
 				64E5ACA12B80AF940002940C /* CartViewCoordinatorProtocol.swift in Sources */,
+				64E5ACAB2B80B3A60002940C /* OrderCheckingUseCase.swift in Sources */,
 				645939B32B804AFD0068C280 /* SceneDelegate.swift in Sources */,
 				64E5AC932B8094B00002940C /* ProductDetailViewModel.swift in Sources */,
 			);
@@ -654,6 +669,7 @@
 				64E5AC812B8089450002940C /* MockShopModel.swift in Sources */,
 				64E5AC422B8079D20002940C /* ShopItemTests.swift in Sources */,
 				64E5AC762B8087E60002940C /* MockCoordinator.swift in Sources */,
+				64E5ACAF2B80B40B0002940C /* OrderCheckingUseCaseTests.swift in Sources */,
 				64E5AC7B2B80888E0002940C /* MockUseCase.swift in Sources */,
 				64E5AC5D2B807FEB0002940C /* MockService.swift in Sources */,
 				64E5AC912B80944F0002940C /* MockRepo.swift in Sources */,

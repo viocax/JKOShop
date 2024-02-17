@@ -10,7 +10,7 @@ import XCTest
 @testable import JKOShop
 @testable import RxSwift
 
-typealias UseCaseProtocol = ProductListUseCase & ProductDetailUseCase & CartUseCase
+typealias UseCaseProtocol = ProductListUseCase & ProductDetailUseCase & CartUseCase & OrderCheckingUseCase
 
 class MockUseCase: UseCaseProtocol {
     var injectRestePageCount: Observable<Void> = .empty()
@@ -48,5 +48,19 @@ class MockUseCase: UseCaseProtocol {
     var injectCanCheckOut: (() -> Bool)?
     func canCheckOut() -> Bool {
         return injectCanCheckOut?() ?? false
+    }
+    
+    var injectCheckOut: Observable<Void> = .empty()
+    func checkOut() -> Observable<Void> {
+        return injectCheckOut
+    }
+
+    var injectGetItemsToCheckOut: Observable<[OrderCellDisplayModel]> = .empty()
+    func getItemsToCheckOut() -> Observable<[OrderCellDisplayModel]> {
+        return injectGetItemsToCheckOut
+    }
+    var injectFooterModel: OrderFooterViewModel?
+    func getFooterInfo() -> OrderFooterViewModel {
+        return injectFooterModel!
     }
 }
