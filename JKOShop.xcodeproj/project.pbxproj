@@ -36,7 +36,7 @@
 		64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC1C2B805D090002940C /* Endpoint.swift */; };
 		64E5AC222B805E8F0002940C /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC212B805E8F0002940C /* ProductListViewController.swift */; };
 		64E5AC282B805F010002940C /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC272B805F010002940C /* ProductDetailViewController.swift */; };
-		64E5AC2A2B805F120002940C /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC292B805F120002940C /* ChartViewController.swift */; };
+		64E5AC2A2B805F120002940C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC292B805F120002940C /* CartViewController.swift */; };
 		64E5AC2C2B805F2F0002940C /* OrderCheckingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2B2B805F2F0002940C /* OrderCheckingViewController.swift */; };
 		64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */; };
 		64E5AC302B805F670002940C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5AC2F2B805F670002940C /* EmptyView.swift */; };
@@ -113,7 +113,7 @@
 		64E5AC1C2B805D090002940C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		64E5AC212B805E8F0002940C /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		64E5AC272B805F010002940C /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
-		64E5AC292B805F120002940C /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		64E5AC292B805F120002940C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		64E5AC2B2B805F2F0002940C /* OrderCheckingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCheckingViewController.swift; sourceTree = "<group>"; };
 		64E5AC2D2B805F410002940C /* HistoryOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderViewController.swift; sourceTree = "<group>"; };
 		64E5AC2F2B805F670002940C /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 				64E5AC732B8087650002940C /* Coordinator.swift */,
 				64E5AC262B805ED60002940C /* OrderChecking */,
 				64E5AC252B805EC60002940C /* HistoryOrder */,
-				64E5AC242B805EBD0002940C /* Chart */,
+				64E5AC242B805EBD0002940C /* Cart */,
 				64E5AC232B805EAC0002940C /* ProductDetail */,
 				64E5AC202B805E6A0002940C /* Product */,
 			);
@@ -307,12 +307,12 @@
 			path = ProductDetail;
 			sourceTree = "<group>";
 		};
-		64E5AC242B805EBD0002940C /* Chart */ = {
+		64E5AC242B805EBD0002940C /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				64E5AC292B805F120002940C /* ChartViewController.swift */,
+				64E5AC292B805F120002940C /* CartViewController.swift */,
 			);
-			path = Chart;
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		64E5AC252B805EC60002940C /* HistoryOrder */ = {
@@ -595,7 +595,7 @@
 				64E5AC7D2B8088EB0002940C /* Date++String.swift in Sources */,
 				64E5AC852B8092AB0002940C /* ProductDetailUseCase.swift in Sources */,
 				64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */,
-				64E5AC2A2B805F120002940C /* ChartViewController.swift in Sources */,
+				64E5AC2A2B805F120002940C /* CartViewController.swift in Sources */,
 				64E5AC742B8087650002940C /* Coordinator.swift in Sources */,
 				64E5AC3A2B8078BC0002940C /* ViewModelType.swift in Sources */,
 				64E5AC3C2B8078DB0002940C /* ShopItemsViewModel.swift in Sources */,

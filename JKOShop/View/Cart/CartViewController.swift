@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChartViewController: UIViewController {
+class CartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

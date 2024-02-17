@@ -44,6 +44,7 @@ private extension ProductListViewController {
     func setupView() {
         view.backgroundColor = .white
         historyButton.setTitle("歷史紀錄", for: .normal)
+        historyButton.setTitleColor(.black, for: .normal)
         let barButton = UIBarButtonItem(customView: historyButton)
         navigationItem.setRightBarButton(barButton, animated: false)
         tableView.backgroundColor = .white
