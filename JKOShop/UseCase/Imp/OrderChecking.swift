@@ -11,7 +11,7 @@ import Kingfisher
 extension UseCase {
     class OrderChecking {
         private let repository: RepositoryProtocol
-        init(repository: RepositoryProtocol) {
+        init(repository: RepositoryProtocol = Repository.shared) {
             self.repository = repository
         }
     }

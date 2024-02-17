@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64523D6A2B80B5EE007F2963 /* OrderCheckingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D692B80B5EE007F2963 /* OrderCheckingCell.swift */; };
+		64523D6D2B80B628007F2963 /* OrderChekingCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D6C2B80B628007F2963 /* OrderChekingCoordinatorProtocol.swift */; };
+		64523D6F2B80B684007F2963 /* OrderCheckingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D6E2B80B684007F2963 /* OrderCheckingViewModel.swift */; };
+		64523D712B80B6B0007F2963 /* OrderCheckingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64523D702B80B6B0007F2963 /* OrderCheckingViewModelTests.swift */; };
 		645939B12B804AFD0068C280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939B02B804AFD0068C280 /* AppDelegate.swift */; };
 		645939B32B804AFD0068C280 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939B22B804AFD0068C280 /* SceneDelegate.swift */; };
 		645939B52B804AFD0068C280 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645939B42B804AFD0068C280 /* ViewController.swift */; };
@@ -104,6 +108,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64523D692B80B5EE007F2963 /* OrderCheckingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCheckingCell.swift; sourceTree = "<group>"; };
+		64523D6C2B80B628007F2963 /* OrderChekingCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderChekingCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		64523D6E2B80B684007F2963 /* OrderCheckingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCheckingViewModel.swift; sourceTree = "<group>"; };
+		64523D702B80B6B0007F2963 /* OrderCheckingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCheckingViewModelTests.swift; sourceTree = "<group>"; };
 		645939AD2B804AFD0068C280 /* JKOShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKOShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645939B02B804AFD0068C280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645939B22B804AFD0068C280 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +220,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64523D682B80B5AC007F2963 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				64E5ACA62B80B2230002940C /* CartTableViewCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		64523D6B2B80B602007F2963 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				64523D692B80B5EE007F2963 /* OrderCheckingCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		645939A42B804AFD0068C280 = {
 			isa = PBXGroup;
 			children = (
@@ -332,7 +356,7 @@
 		64E5AC242B805EBD0002940C /* Cart */ = {
 			isa = PBXGroup;
 			children = (
-				64E5ACA62B80B2230002940C /* CartTableViewCell.swift */,
+				64523D682B80B5AC007F2963 /* Component */,
 				64E5AC292B805F120002940C /* CartViewController.swift */,
 				64E5ACA22B80AFF20002940C /* CartViewModel.swift */,
 				64E5ACA02B80AF940002940C /* CartViewCoordinatorProtocol.swift */,
@@ -351,7 +375,10 @@
 		64E5AC262B805ED60002940C /* OrderChecking */ = {
 			isa = PBXGroup;
 			children = (
+				64523D6B2B80B602007F2963 /* Component */,
 				64E5AC2B2B805F2F0002940C /* OrderCheckingViewController.swift */,
+				64523D6E2B80B684007F2963 /* OrderCheckingViewModel.swift */,
+				64523D6C2B80B628007F2963 /* OrderChekingCoordinatorProtocol.swift */,
 			);
 			path = OrderChecking;
 			sourceTree = "<group>";
@@ -449,6 +476,7 @@
 			children = (
 				64E5AC782B8088690002940C /* ProductListViewModelTests.swift */,
 				64E5ACA42B80B01D0002940C /* CartViewModelTests.swift */,
+				64523D702B80B6B0007F2963 /* OrderCheckingViewModelTests.swift */,
 				64E5AC982B8095970002940C /* ProductDetailViewModelTests.swift */,
 			);
 			path = ViewModelTests;
@@ -609,6 +637,7 @@
 			files = (
 				64E5AC632B8082D90002940C /* ProductListEndpoint.swift in Sources */,
 				645939B52B804AFD0068C280 /* ViewController.swift in Sources */,
+				64523D6F2B80B684007F2963 /* OrderCheckingViewModel.swift in Sources */,
 				64E5AC5A2B807FBC0002940C /* ProductListUseCase.swift in Sources */,
 				64E5AC562B807F5E0002940C /* ProductList.swift in Sources */,
 				64E5AC302B805F670002940C /* EmptyView.swift in Sources */,
@@ -618,6 +647,7 @@
 				64E5AC9F2B80AF2E0002940C /* Cart.swift in Sources */,
 				64E5AC7F2B8088FD0002940C /* Int++String.swift in Sources */,
 				64E5AC722B8087150002940C /* Reactive+UIViewController.swift in Sources */,
+				64523D6D2B80B628007F2963 /* OrderChekingCoordinatorProtocol.swift in Sources */,
 				64E5AC6A2B8086380002940C /* ProductListCell.swift in Sources */,
 				64E5AC1D2B805D090002940C /* Endpoint.swift in Sources */,
 				64E5AC222B805E8F0002940C /* ProductListViewController.swift in Sources */,
@@ -633,6 +663,7 @@
 				64E5AC852B8092AB0002940C /* ProductDetailUseCase.swift in Sources */,
 				64E5AC2E2B805F410002940C /* HistoryOrderViewController.swift in Sources */,
 				64E5AC2A2B805F120002940C /* CartViewController.swift in Sources */,
+				64523D6A2B80B5EE007F2963 /* OrderCheckingCell.swift in Sources */,
 				64E5AC742B8087650002940C /* Coordinator.swift in Sources */,
 				64E5AC3A2B8078BC0002940C /* ViewModelType.swift in Sources */,
 				64E5AC3C2B8078DB0002940C /* ShopItemsViewModel.swift in Sources */,
@@ -673,6 +704,7 @@
 				64E5AC7B2B80888E0002940C /* MockUseCase.swift in Sources */,
 				64E5AC5D2B807FEB0002940C /* MockService.swift in Sources */,
 				64E5AC912B80944F0002940C /* MockRepo.swift in Sources */,
+				64523D712B80B6B0007F2963 /* OrderCheckingViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
