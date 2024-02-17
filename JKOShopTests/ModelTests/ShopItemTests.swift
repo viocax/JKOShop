@@ -19,7 +19,7 @@ final class ShopItemTests: XCTestCase {
             "description": "test 1",
             "create_Time": \(mockDate.timeIntervalSince1970),
             "price": 999,
-            "picture": "https://random.imagecdn.app/500/150"
+            "picture": "https://random.imagecdn.app"
         }
         """.utf8
         do {
@@ -28,7 +28,7 @@ final class ShopItemTests: XCTestCase {
             XCTAssertEqual(model.description, "test 1")
             XCTAssertEqual(model.create_Time, mockDate.timeIntervalSince1970)
             XCTAssertEqual(model.price, 999)
-            XCTAssertEqual(model.picture, "https://random.imagecdn.app/500/150")
+            XCTAssertTrue(model.picture.contains("https://random.imagecdn.app"))
         } catch {
             XCTFail("unexpect \(error.localizedDescription)")
         }

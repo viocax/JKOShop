@@ -36,7 +36,7 @@ final class OrderTests: XCTestCase {
             XCTAssertEqual(model.items[0].description, "test 1")
             XCTAssertEqual(model.items[0].create_Time, mockDate.timeIntervalSince1970)
             XCTAssertEqual(model.items[0].price, 999)
-            XCTAssertEqual(model.items[0].picture, "https://random.imagecdn.app/500/150")
+            XCTAssertTrue(model.items[0].picture.contains("https://random.imagecdn.app"))
         } catch {
             XCTFail("unexpect")
         }

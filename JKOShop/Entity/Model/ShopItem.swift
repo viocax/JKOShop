@@ -25,6 +25,23 @@ extension ShopItem: Codable {
         self.description = (try? container.decode(String.self, forKey: .description)) ?? ""
         self.price = (try? container.decode(Int.self, forKey: .price)) ?? 0
         self.create_Time = (try? container.decode(TimeInterval.self, forKey: .create_Time)) ?? 0
-        self.picture = (try? container.decode(String.self, forKey: .picture)) ?? ""
+        let picture = (try? container.decode(String.self, forKey: .picture)) ?? ""
+        let random = (1...9).map { "\($0 * 100)" }
+        self.picture = picture + "/\(random.randomElement()!)/\(random.randomElement()!)"
+    }
+}
+
+// MARK: ShopItemsViewModel
+extension ShopItem: ShopItemsViewModel {
+    var title: String {
+        return self.name
+    }
+
+    var image: Resource {
+        return RandomImageInfo(urlString: picture, identifier)
+    }
+    
+    var createTime: Date {
+        return Date(timeIntervalSince1970: self.create_Time)
     }
 }
